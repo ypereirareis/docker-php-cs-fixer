@@ -1,10 +1,9 @@
 # Docker image to run PHP CS FIXER in your workspace
 
-**Official Github repository**
-[https://github.com/FriendsOfPHP/PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
-
-**Documentation**
-[http://cs.sensiolabs.org/](http://cs.sensiolabs.org/)
+> **Official Github repository and documentation**
+> 
+> [https://github.com/FriendsOfPHP/PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
+> [http://cs.sensiolabs.org/](http://cs.sensiolabs.org/)
 
 Minimal install and php-cs-fixer execution
 -----------------------
