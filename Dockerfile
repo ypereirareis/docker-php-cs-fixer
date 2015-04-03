@@ -6,9 +6,6 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Install common libs
 RUN apt-get update && apt-get install -y \
-	nano \
-	git \
-	curl \
 	wget \
 	build-essential \
 	software-properties-common \
@@ -26,9 +23,6 @@ RUN apt-get update && apt-get install -y --force-yes \
 RUN sed -i "s/;date.timezone =.*/date.timezone = UTC/" /etc/php5/fpm/php.ini
 RUN sed -i "s/;date.timezone =.*/date.timezone = UTC/" /etc/php5/cli/php.ini
 
-# Install Composer
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
 RUN wget http://get.sensiolabs.org/php-cs-fixer.phar -O php-cs-fixer
 RUN sudo chmod a+x php-cs-fixer
 RUN sudo mv php-cs-fixer /usr/local/bin/php-cs-fixer
@@ -38,3 +32,5 @@ VOLUME ["/app"]
 WORKDIR /app
 
 ENTRYPOINT ["php-cs-fixer"]
+
+CMD ["--help"]

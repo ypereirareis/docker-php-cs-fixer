@@ -1,2 +1,9 @@
-# docker-php-cs-fixer
-An Image to run php-cs-fixer quickly and easily
+# Docker image to run PHP CS FIXER in your workspace
+
+
+Minimal install
+--------------
+
+```
+docker run ypereirareis/php-cs-fixer
+```
